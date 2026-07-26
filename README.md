@@ -101,6 +101,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost scipy
 3. Xia, Y. et al. Development and validation of a novel stemness-related prognostic model for neuroblastoma. *Transl. Pediatr.* **13**, 91–109 (2024).
 4. Jahangiri, L. Predicting neuroblastoma patient risk groups, outcomes, and treatment response using machine learning methods: a review. *Med. Sci.* **12**, 5 (2024).
 
-## Licence
+## License
 
 This project was completed as part of assessed coursework at the University of Birmingham. The code and analysis are shared for educational purposes.

@@ -1,4 +1,11 @@
 # neuroblastoma-outcome-prediction
+
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-3.2.0-red)](https://xgboost.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-Educational-yellow)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-RNA--Seq%20|%20Microarray-green)](.)
+
 Machine learning analysis comparing RNA-Seq and Microarray platforms for clinical outcome prediction in neuroblastoma, with lean gene signature optimisation and clinical validation
 
 # Evaluating the Clinical Utility of RNA-Seq vs. Microarray Data for Outcome Prediction in Neuroblastoma

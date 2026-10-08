@@ -30,14 +30,9 @@ This project investigates whether RNA-Seq's greater transcriptomic resolution im
 ## Repository Structure
 
 ```
-├── UPDATED-Neuroblastoma_Clinical_Endpoint_Prediction_.ipynb   # Full analysis notebook
-├── docs/
-│   └── Group_3_Group_Work_with_Individual_Essay_Submission.pdf  # Group essay (2000 words)
-├── .gitignore
+├── neuroblastoma_analysis.ipynb # Full analysis pipeline
 └── README.md
 ```
-
-> **Note:** The group presentation (`Machine_Learning_Group_3.pptx`, 322 MB) exceeds GitHub's 100 MB file limit. To include it, use [Git LFS](https://git-lfs.com/) or host it separately (e.g. Google Drive).
 
 ## Dataset
 

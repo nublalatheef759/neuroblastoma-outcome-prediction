@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-3.2.0-red)](https://xgboost.readthedocs.io/)
-[![License](https://img.shields.io/badge/License-Educational-yellow)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-RNA--Seq%20|%20Microarray-green)](.)
 
 Machine learning analysis comparing RNA-Seq and Microarray platforms for clinical outcome prediction in neuroblastoma, with lean gene signature optimisation and clinical validation
@@ -106,4 +105,5 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost scipy
 ## License
 
 This project was completed as part of assessed coursework at the University of Birmingham. The code and analysis are shared for educational purposes.
+
 

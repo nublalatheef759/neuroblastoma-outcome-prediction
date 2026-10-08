@@ -1,4 +1,4 @@
-# neuroblastoma-outcome-prediction
+﻿# neuroblastoma-outcome-prediction
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange)](https://scikit-learn.org/)
@@ -21,17 +21,17 @@ This project investigates whether RNA-Seq's greater transcriptomic resolution im
 ## Key Findings
 
 - Both platforms achieved strong predictive performance (AUC > 0.90 for death and high-risk endpoints)
-- RNA-Seq reaches peak performance with fewer genes — AUC 0.920 at 20 genes vs. Microarray's 0.912 at 50
+- RNA-Seq reaches peak performance with fewer genes â€” AUC 0.920 at 20 genes vs. Microarray's 0.912 at 50
 - At the 10-gene level, RNA-Seq (AUC 0.914) outperforms Microarray (AUC 0.883) with zero gene overlap between platforms
 - Signatures are fully independent of MYCN amplification and age
 - The 10-gene model correctly identifies 15 of 28 patients (53.6%) misclassified as Favourable by INSS staging
-- Cross-platform MI analysis shows 44–99% signal loss when top genes are assessed on the alternate platform
+- Cross-platform MI analysis shows 44â€“99% signal loss when top genes are assessed on the alternate platform
 
 ## Repository Structure
 
 ```
-├── neuroblastoma_analysis.ipynb # Full analysis pipeline
-└── README.md
+â”œâ”€â”€ neuroblastoma_analysis.ipynb # Full analysis pipeline
+â””â”€â”€ README.md
 ```
 
 ## Dataset
@@ -39,8 +39,8 @@ This project investigates whether RNA-Seq's greater transcriptomic resolution im
 **Source:** SEQC/MAQC-III Consortium ([Zhang et al., Genome Biology, 2015](https://doi.org/10.1186/s13059-015-0694-1))
 
 - **Patients:** 498 neuroblastoma samples (249 training / 249 test)
-- **RNA-Seq:** 23,146 genes (log2 FPKM) → 13,735 after filtering
-- **Microarray:** 44,708 Agilent probes → 5,903 genes after probe-to-gene collapse
+- **RNA-Seq:** 23,146 genes (log2 FPKM) â†’ 13,735 after filtering
+- **Microarray:** 44,708 Agilent probes â†’ 5,903 genes after probe-to-gene collapse
 - **Endpoints:** Death from disease, progression, high risk (binary); INSS stage (5-class); sex (binary); age at diagnosis (continuous)
 
 > **Note:** Raw data files are not included in this repository due to size. The dataset is publicly available from the [SEQC project on GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49711).
@@ -55,8 +55,8 @@ The analysis follows an eight-stage pipeline, with all preprocessing thresholds 
 | 2. Preprocessing & QC | ID correction (330 Illumina lane suffixes), variance/sparsity/expression filtering, probe-to-gene collapse |
 | 3. Exploratory Analysis | Class imbalance assessment, endpoint correlations, PCA visualisation |
 | 4. Unsupervised Learning | K-Means (k=2), hierarchical clustering, silhouette scoring, chi-square enrichment |
-| 5. Supervised Classification | 6 models × 2 platforms × 6 endpoints, MI feature selection (top 100), nested CV (3×5 fold) |
-| 6. Signature Optimisation | Feature count curve (k=1–100), 10-gene lean signature, platform-specific selection |
+| 5. Supervised Classification | 6 models Ã— 2 platforms Ã— 6 endpoints, MI feature selection (top 100), nested CV (3Ã—5 fold) |
+| 6. Signature Optimisation | Feature count curve (k=1â€“100), 10-gene lean signature, platform-specific selection |
 | 7. Clinical Validation | MYCN independence test, INSS staging comparison, platform verdict |
 | 8. Outcome Prediction | 249 test-set predictions, probability scores, calibration assessment |
 
@@ -92,7 +92,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost scipy
 ## Usage
 
 1. Download the SEQC dataset files (`log2FPKM.tsv`, `allProbIntensities.tsv`, `patientInfo.tsv`) and place them in a `data/` directory
-2. Open `UPDATED-Neuroblastoma_Clinical_Endpoint_Prediction_.ipynb` in Jupyter or VS Code
+2. Open `neuroblastoma_analysis.ipynb` in Jupyter or VS Code
 3. Update the `data_dir` path in Section 1.1 to point to your data directory
 4. Run all cells sequentially
 
@@ -100,9 +100,10 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost scipy
 
 1. Zhang, W. et al. Comparison of RNA-seq and microarray-based models for clinical endpoint prediction. *Genome Biol.* **16**, 133 (2015).
 2. Gupta, M. et al. Development and validation of a 21-gene prognostic signature in neuroblastoma. *Sci. Rep.* **13**, 12526 (2023).
-3. Xia, Y. et al. Development and validation of a novel stemness-related prognostic model for neuroblastoma. *Transl. Pediatr.* **13**, 91–109 (2024).
+3. Xia, Y. et al. Development and validation of a novel stemness-related prognostic model for neuroblastoma. *Transl. Pediatr.* **13**, 91â€“109 (2024).
 4. Jahangiri, L. Predicting neuroblastoma patient risk groups, outcomes, and treatment response using machine learning methods: a review. *Med. Sci.* **12**, 5 (2024).
 
 ## License
 
 This project was completed as part of assessed coursework at the University of Birmingham. The code and analysis are shared for educational purposes.
+
